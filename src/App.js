@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Vocab } from "./vocabList.js";
 
 function App() {
+  const randomNum = Math.floor(Math.random() * Math.floor(Vocab.length));
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>🔍Word - defination + Vocab builder</h2>
+
+      <div className="wordbox">
+        <h1> 📝{Vocab[randomNum].FIELD1}</h1>
+        <h3> [ {Vocab[randomNum].FIELD2}  ] </h3>
+      </div>
     </div>
   );
 }
 
 export default App;
+
+// add some good designs using bootstrap or other templates
+// just copy paste n upload it in github + netlify
+// add more functionality like google translate
