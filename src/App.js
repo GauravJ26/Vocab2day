@@ -1,3 +1,5 @@
+// this app will show you random words to build your vocabulary.   ~GJ
+
 import "./App.css";
 import { Vocab } from "./vocabList.js";
 
